@@ -20,8 +20,8 @@ spec:
       dnsPolicy: ClusterFirst
       containers:
       - name: agent
-        image: my-image-repo:kube-gelf
-        imagePullPolicy: "IfNotPresent"
+        image: paomb/k8s-gelf:latest
+        imagePullPolicy: "always"
         env:
         - name: GELF_HOST
           valueFrom:
