@@ -21,7 +21,7 @@ spec:
       containers:
       - name: agent
         image: paomb/k8s-gelf:latest
-        imagePullPolicy: "always"
+        imagePullPolicy: "Always"
         env:
         - name: GELF_HOST
           valueFrom:
